@@ -1,0 +1,55 @@
+<br>
+<ng-container >
+  <div class="table-responsive-sm">
+    <table class="table table-striped table-sm row-border hover" datatable>
+      <thead>
+        <tr>
+          <th>Num tâche</th>
+          <th>Statut EN PREPA</th>
+          <th>Date EN PREPA</th>
+          <th>Statut APPROUVE</th>
+          <th>Date APPROUVEE</th>
+          <th>Statut PRET</th>
+          <th>Date PRET</th>
+          <th>Statut EN COURS</th>
+          <th>Date EN COURS</th>
+          <th>Statut FINI</th>
+          <th>Date FINI</th>
+          <th>Com 1N</th>
+          <th>Date 1N</th>
+          <th>Statut CLOTURE</th>
+          <th>Date CLOTUREE</th>
+          <th>Statut ANNULE</th>
+          <th>Date ANNULEE</th>
+          <th>Statut FERME</th>
+          <th>Date FERMEE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let d of dones" >
+          <td>{{d.numTache}}</td>
+          <td>{{d.statutPrepa}}</td>
+          <td>{{d.dateEnPrepa}}</td>
+          <td>{{d.statutApprouve}}</td>
+          <td>{{d.dateApprouve}}</td>
+          <td>{{d.statutPret}}</td>
+          <td>{{d.datePret}}</td>
+          <td>{{d.statutEnCours}}</td>
+          <td>{{d.dateEnCours}}</td>
+          <td>{{d.statutFini}}</td>
+          <td>{{d.dateFini}}</td>
+          <td>{{d.com1n}}</td>
+          <td>{{d.date1n}}</td>
+          <td>{{d.statutCloture}}</td>
+          <td>{{d.dateCloture}}</td>
+          <td>{{d.statutAnnule}}</td>
+          <td>{{d.dateAnnule}}</td>
+          <td>{{d.statutFerme}}</td>
+          <td>{{d.dateFerme}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+  <div id="graph"></div>
+</ng-container>
